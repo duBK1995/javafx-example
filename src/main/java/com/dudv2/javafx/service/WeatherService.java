@@ -1,4 +1,4 @@
-package com.vojtechruzicka.javafxweaverexample;
+package com.dudv2.javafx.service;
 
 import org.springframework.stereotype.Service;
 

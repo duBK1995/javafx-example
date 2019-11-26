@@ -1,0 +1,13 @@
+.loginButton {
+    base-color: red;
+    -fx-font-size: 16px;
+    -fx-pref-width: 189;
+    -fx-pref-height: 40;
+    -fx-background-color: base-color;
+    -fx-alignment: center;
+}
+
+.loginButton:hover {
+    -fx-cursor: hand;
+    -fx-background-color: derive(#9c1210, -20%);
+}
