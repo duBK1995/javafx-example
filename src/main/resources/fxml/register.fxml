@@ -22,6 +22,7 @@
             <TextField fx:id="txtPassword" layoutX="138.0" layoutY="134.0" prefHeight="34.0" prefWidth="217.0" />
             <Label layoutX="56.0" layoutY="93.0" text="Password:" />
             <TextField fx:id="txtPassword1" layoutX="138.0" layoutY="85.0" prefHeight="34.0" prefWidth="217.0" />
+            <TextField layoutY="178.0" />
          </children>
       </AnchorPane>
    </children>

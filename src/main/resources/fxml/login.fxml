@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import com.gluonhq.charm.glisten.control.CardPane?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keyPressed" onTouchPressed="#keyPressed" prefHeight="263.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dudv2.javafx.ui.login.LoginController">
     <children>
-        <AnchorPane prefHeight="270.0" prefWidth="438.0" stylesheets="@../style/login.css">
+        <AnchorPane stylesheets="@../style/login.css">
             <children>
                 <Button fx:id="btnLogin" layoutX="138.0" layoutY="190.0" mnemonicParsing="false" onAction="#login" styleClass="loginButton" text="Login">
                     <effect>
@@ -21,7 +26,26 @@
                 <Label layoutX="56.0" layoutY="142.0" text="Password:" />
                 <TextField fx:id="txtUsername" layoutX="138.0" layoutY="76.0" prefHeight="34.0" prefWidth="217.0" AnchorPane.bottomAnchor="153.0" AnchorPane.leftAnchor="138.0" AnchorPane.rightAnchor="83.0" AnchorPane.topAnchor="76.0" />
             <PasswordField fx:id="txtPassword" layoutX="138.0" layoutY="134.0" prefHeight="34.0" prefWidth="217.0" />
+            <CardPane layoutX="176.0" layoutY="42.0" prefHeight="184.0" prefWidth="248.0">
+                <Label style="-fx-padding:10;" text="label1" />
+                <Label style="-fx-padding:10;" text="label2" />
+                <Label style="-fx-padding:10;" text="label3" />
+            </CardPane>
+            <Avatar layoutX="37.0" layoutY="24.0">
+               <image>
+                  <Image url="@../image/avatar.jpg" />
+               </image>
+            </Avatar>
+            <ImageView fitHeight="64.0" fitWidth="85.0" layoutX="31.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/avatar.jpg" />
+               </image>
+            </ImageView>
+            <TextField layoutX="102.0" layoutY="11.0" />
             </children>
+         <effect>
+            <Glow />
+         </effect>
         </AnchorPane>
     </children>
 </VBox>
